@@ -11,10 +11,12 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
+/* -------grid */
 .row {
   max-width: 1140px;
   margin: 0 auto;
 }
+/* -------header */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(images/hero.jpg);
@@ -28,9 +30,77 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: slategray;
 }
 
 h1 {
-  margin: 0;
+  margin: 0 20;
+  color: slategray;
+  font-size: 2.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+.logo {
+  height: 6.25rem;
+  width: auto;
+  float: left;
+  margin-top: 1.25rem;
+}
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 3rem;
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 2.5rem;
+  margin-top: 1.25rem;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: beige;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid rgb(221, 145, 4);
+}
+/*-----reusable button css*/
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  border-radius: 200px;
+  text-decoration: none;
+  border: 1px solid slateblue;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  margin-right: 15px;
+  border-bottom: transition 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: rgb(221, 145, 4);
+  color: beige;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+  color: slateblue;
+}
+.btn:hover,
+.btn:active {
+  background-color: rgb(190, 125, 5);
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid slateblue;
+  color: beige;
+}
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid slateblue;
 }
