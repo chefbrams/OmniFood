@@ -16,6 +16,12 @@ html {
   max-width: 1140px;
   margin: 0 auto;
 }
+section {
+  padding: 5rem 0;
+}
+.box {
+  padding: 1%;
+}
 /* -------header */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -32,14 +38,57 @@ header {
   transform: translate(-50%, -50%);
 }
 
-h1 {
-  margin: 0 20;
-  color: slategray;
-  font-size: 2.6rem;
+h1,
+h2,
+h3 {
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 1px;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: slategray;
+  font-size: 2.6rem;
   word-spacing: 4px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 2rem;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 1.4rem;
+  letter-spacing: 1px;
+}
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: orange;
+  content: " ";
+  width: 6.25rem;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+}
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+/* icons -------*/
+.icon-big {
+  font-size: 4.5rem;
+  display: block;
+  color: orange;
+  margin-bottom: 10px;
+}
+/* paragraphs -------*/
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+.box p {
+  font-size: 0.9rem;
+  line-height: 145%;
 }
 .logo {
   height: 6.25rem;
@@ -104,3 +153,4 @@ h1 {
 .btn-full:active {
   border: 1px solid slateblue;
 }
+/*-----features------*/
